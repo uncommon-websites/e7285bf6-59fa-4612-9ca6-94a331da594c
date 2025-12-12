@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import ThemeToggle from './ThemeToggle.svelte';
 	
 	let showBanner = true;
 </script>
@@ -46,7 +47,8 @@
 		</div>
 
 		<!-- CTA -->
-		<div class="flex items-center gap-4">
+		<div class="flex items-center gap-3">
+			<ThemeToggle />
 			<a href="#" class="hidden md:flex items-center gap-2 border border-border px-3 py-1.5 text-xs font-mono hover:bg-primary-50 transition-colors uppercase">
 				Join Waitlist
 				<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">

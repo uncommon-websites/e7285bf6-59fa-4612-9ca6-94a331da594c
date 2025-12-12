@@ -5,7 +5,7 @@
 	--font-sans: 'Inter', sans-serif;
 	--font-mono: 'JetBrains Mono', monospace;
 
-	/* Colors */
+	/* Colors - Light Mode (Default) */
 	--color-background: #ffffff;
 	--color-foreground: #000000;
 	--color-muted: #666666;
@@ -42,7 +42,35 @@
 	--spacing-container: 1280px;
 }
 
+/* Dark Mode Color Overrides */
+.dark {
+	--color-background: #0a0a0a;
+	--color-foreground: #fafafa;
+	--color-muted: #a3a3a3;
+	--color-border: #262626;
+	--color-accent: #ff5722; /* Slightly brighter orange for dark mode */
+	
+	/* Adjust primary colors for dark mode - use lighter shades for better contrast */
+	--color-primary-50: oklch(0.262 0.051 172.552);
+	--color-primary-100: oklch(0.378 0.077 168.94);
+	--color-primary-200: oklch(0.432 0.095 166.913);
+	--color-primary-300: oklch(0.508 0.118 165.612);
+	--color-primary-400: oklch(0.596 0.145 163.225);
+	--color-primary-500: oklch(0.696 0.17 162.48);
+	--color-primary-600: oklch(0.765 0.177 163.223);
+	--color-primary-700: oklch(0.845 0.143 164.978);
+	--color-primary-800: oklch(0.905 0.093 164.15);
+	--color-primary-900: oklch(0.95 0.052 163.051);
+	--color-primary-950: oklch(0.979 0.021 166.113);
+}
+
 @layer base {
+	* {
+		transition-property: color, background-color, border-color;
+		transition-duration: 200ms;
+		transition-timing-function: ease-in-out;
+	}
+	
 	body {
 		font-family: var(--font-sans);
 		color: var(--color-foreground);
