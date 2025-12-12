@@ -5,38 +5,38 @@
 			<!-- Left Column: CTA & Visual -->
 			<div class="flex flex-col h-full">
 				<div class="mb-8">
-					<p class="font-mono text-xs text-muted mb-4">Start building</p>
-					<h2 class="text-2xl font-medium mb-4">Towards a programmatic web for AIs</h2>
+					<p class="font-mono text-xs text-muted mb-4">Get started</p>
+					<h2 class="text-2xl font-medium mb-4">Eliminate analytics debt forever</h2>
 					<p class="text-muted font-light mb-8 text-sm leading-relaxed max-w-md">
-						Parallel is building new interfaces, infrastructure, and business models for AIs to work with the web
+						Weave treats analytics as code, automating event detection and SDK generation so developers can focus on shipping features.
 					</p>
 					<div class="flex gap-3 mb-12">
 						<button class="border border-border px-3 py-1.5 text-xs font-mono uppercase hover:bg-primary-50 transition-colors flex items-center gap-2">
-							TRY IT FOR FREE
-							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">P</span>
+							TRY DEMO
+							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">D</span>
 						</button>
 						<button class="border border-border px-3 py-1.5 text-xs font-mono uppercase hover:bg-primary-50 transition-colors flex items-center gap-2">
-							JOIN US
-							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">J</span>
+							JOIN WAITLIST
+							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">W</span>
 						</button>
 					</div>
 				</div>
 				
-				<!-- Barcode Visual -->
-				<div class="mt-auto w-full h-48 bg-black relative overflow-hidden flex items-center justify-center">
+				<!-- Code Pattern Visual -->
+				<div class="mt-auto w-full h-48 bg-gray-950 relative overflow-hidden flex items-center justify-center">
 					{#each Array(100) as _, i}
 						<div 
-							class="h-full bg-white absolute" 
+							class="h-full bg-primary-500/20 absolute" 
 							style="
 								left: {i}%; 
 								width: {Math.random() * 2}%; 
-								opacity: {Math.random()};
+								opacity: {Math.random() * 0.6};
 							"
 						></div>
 					{/each}
 					<div class="absolute inset-0 flex items-center justify-center">
-						<div class="bg-black text-white font-mono text-[10px] px-2 py-1 z-10">
-							parallel.web
+						<div class="bg-gray-950 text-primary-400 font-mono text-sm px-3 py-2 z-10 border border-primary-500/30">
+							weave.analytics
 						</div>
 					</div>
 				</div>
@@ -49,52 +49,52 @@
 				<div class="space-y-12">
 					<!-- Update 1 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 20</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">January 15</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel Extract</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Public Beta Launch</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel Extract converts web pages into LLM-ready markdown format. It operates in two modes: compressed excerpts (dense, semantically relevant content) and full content extraction (complete page content). The API is designed for AI agents and handles challenging web content including JavaScript-rendered sites and complex PDFs, making it useful for tasks like documentation extraction, research paper processing, and financial filing analysis.
+								Weave is now in Public Beta with a waitlist system for controlled rollout. The product is live and accepting users for testing, with a demo available without signup required. Early access users get special pricing and priority support.
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Launch</span>
 						</div>
 					</div>
 
 					<!-- Update 2 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 15</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">January 10</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel FindAll</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">SOC 2 Type II Certification</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel's new FindAll API turns natural language queries into custom datasets from the web. It finds entities like companies, people, or locations based on your criteria, then enriches them with structured data—all with citations. FindAll Pro achieves 61% recall, 3x better than competitors.
+								Weave achieves SOC 2 Type II certification and GDPR compliance. All data is encrypted in transit and at rest, with read-only GitHub access and no source code storage. We're committed to enterprise-grade security from day one.
 							</p>
 							<div class="flex gap-2">
-								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
-								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Benchmarks</span>
+								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Security</span>
+								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Compliance</span>
 							</div>
 						</div>
 					</div>
 
 					<!-- Update 3 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 13</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">December 20</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel Monitor</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Multi-Platform Integration Support</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel Monitor can be thought of as a web search that's always on: you define a query that kicks off an ongoing stream of updates every time new related information appears on the web.
+								Weave now supports sending events to multiple platforms simultaneously: Segment, Amplitude, Mixpanel, Google Analytics 4, PostHog, and Heap. Platform-agnostic approach means no vendor lock-in and seamless integration with your existing analytics stack.
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Integrations</span>
 						</div>
 					</div>
 
 					<!-- Update 4 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 12</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">December 1</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Parallel raises $100M Series A to build web infrastructure for agents</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Framework Support Expansion</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel raises $100M Series A at a 740M valuation.
+								Weave now supports React, Next.js, Vue, Angular, Svelte, and vanilla JavaScript. We're adding new frameworks monthly based on user demand, with backward compatibility for existing tracking implementations.
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Fundraise</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Update</span>
 						</div>
 					</div>
 				</div>
