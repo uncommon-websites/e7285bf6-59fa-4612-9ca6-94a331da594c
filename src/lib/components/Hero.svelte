@@ -1,44 +1,74 @@
-<section class="pt-20 pb-12 overflow-hidden">
+<section class="pt-32 pb-24 overflow-hidden border-b border-border">
 	<div class="container-custom">
-		<div class="max-w-4xl mb-12">
-			<h1 class="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-4">
-				Ship features, not tracking code
-			</h1>
-			<p class="text-2xl md:text-3xl text-muted font-light">
-				Auto-generate type-safe analytics tracking <span class="text-accent">in 7 minutes</span>
-			</p>
-		</div>
+		<!-- Editorial Hero Layout -->
+		<div class="grid lg:grid-cols-2 gap-16 items-center">
+			<!-- Left: Bold Statement -->
+			<div class="space-y-8">
+				<div class="inline-block px-3 py-1 bg-accent/10 border border-accent/20 text-accent text-sm font-mono uppercase tracking-wider">
+					Public Beta
+				</div>
+				
+				<h1 class="text-5xl md:text-6xl lg:text-7xl leading-none">
+					Stop writing<br/>
+					<span class="text-accent">tracking code</span>
+				</h1>
+				
+				<div class="space-y-4 text-lg md:text-xl text-muted max-w-lg">
+					<p>Your developers have better things to build. Let AI scan your codebase and auto-generate type-safe analytics in 7 minutes.</p>
+					<p class="text-foreground font-medium">288x faster than manual implementation.</p>
+				</div>
 
-		<div class="relative w-full aspect-[2/1] bg-gray-950 rounded-sm overflow-hidden group">
-			<!-- Code Editor Background -->
-			<div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black"></div>
-			
-			<!-- Grid Overlay -->
-			<div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 20px 20px;"></div>
-			
-			<!-- Code Lines Visual -->
-			<div class="absolute inset-0 p-8 font-mono text-xs text-gray-500 space-y-2 overflow-hidden">
-				<div class="flex gap-4"><span class="text-gray-700">1</span><span class="text-primary-400">import</span> <span class="text-gray-300">&#123; trackEvent &#125;</span> <span class="text-primary-400">from</span> <span class="text-green-400">'@weave/sdk'</span></div>
-				<div class="flex gap-4"><span class="text-gray-700">2</span></div>
-				<div class="flex gap-4"><span class="text-gray-700">3</span><span class="text-purple-400">function</span> <span class="text-blue-300">handleClick</span><span class="text-gray-400">()</span> <span class="text-gray-400">&#123;</span></div>
-				<div class="flex gap-4 pl-8"><span class="text-gray-700">4</span><span class="text-gray-300">trackEvent</span><span class="text-gray-400">(</span><span class="text-green-400">'button_clicked'</span><span class="text-gray-400">,</span> <span class="text-gray-400">&#123;</span></div>
-				<div class="flex gap-4 pl-16"><span class="text-gray-700">5</span><span class="text-blue-300">component</span><span class="text-gray-400">:</span> <span class="text-green-400">'hero'</span><span class="text-gray-400">,</span></div>
-				<div class="flex gap-4 pl-16"><span class="text-gray-700">6</span><span class="text-blue-300">action</span><span class="text-gray-400">:</span> <span class="text-green-400">'signup'</span></div>
-				<div class="flex gap-4 pl-8"><span class="text-gray-700">7</span><span class="text-gray-400">&#125;)</span></div>
-				<div class="flex gap-4"><span class="text-gray-700">8</span><span class="text-gray-400">&#125;</span></div>
+				<div class="flex flex-wrap gap-4 pt-4">
+					<button class="px-6 py-3 bg-accent text-white font-medium hover:bg-accent/90 transition-colors">
+						Try the demo
+					</button>
+					<button class="px-6 py-3 border-2 border-border hover:border-foreground transition-colors font-medium">
+						View documentation
+					</button>
+				</div>
 			</div>
 
-			<!-- Gradient Overlay -->
-			<div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>
+			<!-- Right: Visual Statement -->
+			<div class="relative">
+				<!-- Large Crossed Out "Manual" -->
+				<div class="relative bg-background border-2 border-border p-12 space-y-6">
+					<div class="relative">
+						<div class="text-6xl font-bold text-muted/20 select-none">
+							MANUAL
+						</div>
+						<div class="absolute inset-0 flex items-center">
+							<div class="w-full h-1 bg-accent rotate-[-8deg]"></div>
+						</div>
+					</div>
+					
+					<div class="space-y-3 text-sm text-muted font-mono">
+						<div class="flex items-center gap-2 line-through opacity-50">
+							<span>→</span> Write tracking code
+						</div>
+						<div class="flex items-center gap-2 line-through opacity-50">
+							<span>→</span> Update on every change
+						</div>
+						<div class="flex items-center gap-2 line-through opacity-50">
+							<span>→</span> Fix broken events
+						</div>
+						<div class="flex items-center gap-2 line-through opacity-50">
+							<span>→</span> Maintain documentation
+						</div>
+					</div>
 
-			<!-- Floating Badge -->
-			<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-sm shadow-2xl border border-gray-200 flex items-center gap-3 text-xs font-mono">
-				<div class="flex items-center gap-2">
-					<div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-					<span class="text-gray-900 font-semibold">98.7% Schema Valid</span>
+					<div class="pt-6 border-t-2 border-accent">
+						<div class="text-accent font-bold text-2xl mb-2">AUTOMATED</div>
+						<div class="text-sm text-muted">
+							Connect repo → AI scans → Ship to production
+						</div>
+					</div>
 				</div>
-				<div class="w-px h-4 bg-gray-300"></div>
-				<span class="text-gray-600">288x Faster Setup</span>
+
+				<!-- Floating Stats -->
+				<div class="absolute -bottom-6 -right-6 bg-foreground text-background p-6 border-2 border-foreground">
+					<div class="text-4xl font-bold">7min</div>
+					<div class="text-sm font-mono">setup time</div>
+				</div>
 			</div>
 		</div>
 	</div>
